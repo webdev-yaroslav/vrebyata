@@ -30,7 +30,7 @@
 		<header>
 			<div class="menu-section">
 				<div class="container"><a class="logo" href="index.html"><img src="tpl/img/logo2.png" alt=""></a>
-					<nav class="navigation" hidden-menu="">
+					<nav class="navigation">
 						<ul>
 							<li><a href="#abouts">О нас</a></li>
 							<li><a href="#character">Персонажи</a></li>
@@ -38,6 +38,14 @@
 							<li><a href="#contact">Контакты</a></li>
 						</ul>
 					</nav><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">Заказать звонок</button>
+					<div class="hamburger-menu"> <input id="menu__toggle" type="checkbox"><label class="menu__btn" for="menu__toggle"> <span> </span></label>
+						<ul class="menu__box">
+							<li><a class="menu__item" href="#abouts">О нас</a></li>
+							<li><a class="menu__item" href="#character">Персонажи</a></li>
+							<li><a class="menu__item" href="#package">Пакеты услуг</a></li>
+							<li><a class="menu__item" href="#contact">Контакты</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -58,17 +66,17 @@
 					<h1>Организация дестких праздников "Весёлые ребята" поможет отметить вам самый незабываемый день рождения!</h1>
 				</div>
 			</section>
-			<div class="wave" id="abouts"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+			<div class="about-wave"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
 					<path fill="#CD4C69" fill-opacity="1" d="M0,160L34.3,154.7C68.6,149,137,139,206,117.3C274.3,96,343,64,411,74.7C480,85,549,139,617,138.7C685.7,139,754,85,823,58.7C891.4,32,960,32,1029,64C1097.1,96,1166,160,1234,181.3C1302.9,203,1371,181,1406,170.7L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
 				</svg> </div>
-			<section class="about">
+			<section class="about" id="abouts">
 				<div class="container">
 					<h2>О нас</h2>
 					<div class="about__block">
 						<div class="about__text">
 							<p> Игровой центр «Весёлые ребята» приглашает Вас отметить самый незабываемый день рождения! Это будет самый яркий и весёлый праздник! </p>
 							<ol class="rounded">
-								<li>наш опыт работы в сфере праздников 7 лет</li>
+								<li>наш опыт работы 7 лет</li>
 								<li>опытные и весёлые аниматоры</li>
 								<li>больше 50 ярких персонажей</li>
 								<li>шоу программы</li>
@@ -110,179 +118,179 @@
 						<div class="tabs__body">
 							<div class="tabs__block" id="tab_01">
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/poni.jpg" alt="Пони"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/poni.jpg" alt="Пони"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Пони</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/lol.jpg" alt="Куклы Лол"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/lol.jpg" alt="Куклы Лол"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Куклы Лол</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/fanpatrol.jpg" alt="Сказочный патруль"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/fanpatrol.jpg" alt="Сказочный патруль"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Сказочный патруль</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/dogpatrol.jpg" alt="Щенячий патруль"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/dogpatrol.jpg" alt="Щенячий патруль"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Щенячий патруль</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/maskheroes.jpg" alt="Герои в масках"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/maskheroes.jpg" alt="Герои в масках"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Герои в масках</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/gnoms.jpg" alt="Гномы"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/gnoms.jpg" alt="Гномы"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Гномы</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/superkot.jpg" alt="Леди Баг и Суперкот"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/superkot.jpg" alt="Леди Баг и Суперкот"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Леди Баг и Суперкот</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/brawlstars.jpg" alt="Бравл Старс"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/brawlstars.jpg" alt="Бравл Старс"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Бравл Старс</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/elza.jpg" alt="Ельза"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/elza.jpg" alt="Ельза"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Ельза и Анна</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/witch.jpg" alt="Ведьмы"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/witch.jpg" alt="Ведьмы"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Ведьмы</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/gari.jpg" alt="Гари Поттер и Гермиона"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/gari.jpg" alt="Гари Поттер и Гермиона"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Гари Поттер и Гермиона</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/turt.jpg" alt="Лео и Эйприл"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/turt.jpg" alt="Лео и Эйприл"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Лео и Эйприл</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/mine.jpg" alt="Майнкрафт"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/mine.jpg" alt="Майнкрафт"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Майнкрафт</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/gravity.jpg" alt="Гравити Фолз"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/gravity.jpg" alt="Гравити Фолз"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Гравити Фолз</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/mouse.jpg" alt="Мики и Мини маус"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/mouse.jpg" alt="Мики и Мини маус"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Мики и Мини маус</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/bears.jpg" alt="Мимимишки"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/bears.jpg" alt="Мимимишки"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Мимимишки</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/bloom.jpg" alt="Блум"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/bloom.jpg" alt="Блум"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Блум</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/rusal.jpg" alt="Русалочка"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/rusal.jpg" alt="Русалочка"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Русалочка</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/pepa.jpg" alt="Свинка Пепа"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/pepa.jpg" alt="Свинка Пепа"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Свинка Пепа</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/maria.jpg" alt="Маша"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/maria.jpg" alt="Маша"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Маша</div>
 									</div>
 								</div>
 							</div>
 							<div class="tabs__block" id="tab_02">
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/joker.jpg" alt="Джокер и Харли"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/joker.jpg" alt="Джокер и Харли"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Джокер и Харли</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/transformers.jpg" alt="Бамблби и Арси"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/transformers.jpg" alt="Бамблби и Арси"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Бамблби и Арси</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/batman.jpg" alt="Бэтмен"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/batman.jpg" alt="Бэтмен"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Бэтмен</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/marvel.jpg" alt="Герои Марвел"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/marvel.jpg" alt="Герои Марвел"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Герои Марвел</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/black.jpg" alt="Блэк Стар"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/black.jpg" alt="Блэк Стар"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Блэк Стар</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/pirates.jpg" alt="Пираты"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/pirates.jpg" alt="Пираты"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Пираты</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/cowboys.jpg" alt="Ковбои"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/cowboys.jpg" alt="Ковбои"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Ковбои</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/dino.jpg" alt="Дино"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/dino.jpg" alt="Дино"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Дино</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/specnaz.jpg" alt="Спецназ"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/specnaz.jpg" alt="Спецназ"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Спецназ</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/tiktok.jpg" alt="Тик Ток"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/tiktok.jpg" alt="Тик Ток"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Тик Ток</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/football.jpg" alt="Футбол"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/football.jpg" alt="Футбол"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Футбол</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/spy.jpg" alt="Шпионы"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/spy.jpg" alt="Шпионы"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Шпионы</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/hawai.jpg" alt="Гаваи"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/hawai.jpg" alt="Гаваи"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Гаваи</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/youtube.jpg" alt="Ютуб"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/youtube.jpg" alt="Ютуб"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Ютуб</div>
 									</div>
 								</div>
 								<div class="block__item">
-									<div class="block__item-wrap"> <img src="tpl/img/characters/holywood.jpg" alt="Голливуд"><button>заказать</button>
+									<div class="block__item-wrap"> <img src="tpl/img/characters/holywood.jpg" alt="Голливуд"><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">заказать</button>
 										<div class="block__item-name">Голливуд</div>
 									</div>
 								</div>
@@ -339,9 +347,8 @@
 								</li>
 								<div class="li__cost">
 									<div class="cost-num">7500</div><img src="tpl/img/icons/ruble-icon.svg" alt="">
-								</div><a href="">
-									<div class="li__button standart-btn">Выбрать пакет</div>
-								</a>
+								</div>
+								<div class="li__button standart-btn" onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">Выбрать пакет</div>
 							</ul>
 						</div>
 						<div class="packages__block">
@@ -384,10 +391,9 @@
 									</div>
 								</li>
 								<div class="li__cost">
-									<div class="cost-num">9000</div><img src="tpl/img/icons/ruble-icon.svg" alt="">
-								</div><a href="">
-									<div class="li__button super-btn">Выбрать пакет</div>
-								</a>
+									<div class="cost-num">10000</div><img src="tpl/img/icons/ruble-icon.svg" alt="">
+								</div>
+								<div class="li__button super-btn" onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">Выбрать пакет</div>
 							</ul>
 						</div>
 						<div class="packages__block">
@@ -430,10 +436,9 @@
 									</div>
 								</li>
 								<div class="li__cost">
-									<div class="cost-num">11000</div><img src="tpl/img/icons/ruble-icon.svg" alt="">
-								</div><a href="">
-									<div class="li__button hit-btn">Выбрать пакет</div>
-								</a>
+									<div class="cost-num">12000</div><img src="tpl/img/icons/ruble-icon.svg" alt="">
+								</div>
+								<div class="li__button hit-btn" onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">Выбрать пакет</div>
 							</ul>
 						</div>
 					</div>
@@ -447,7 +452,7 @@
 					<h2>Контакты</h2>
 					<div class="contacts__info">
 						<p>Мы ждем Вас по адресу: <span>г. Энгельс, Тельмана 6д, с 11:00 до 20:00 без перерыва и выходных.</span></p>
-						<p>По всем вопросам пишите или звоните:<a href="tel:+79173277764" style="margin-left: 10px">+7 (917) 327-77-64, Екатерина</a><img src="tpl/img/icons/viber.svg" alt="Вайбер"><img src="tpl/img/icons/whatsapp.svg" alt="Вотсап"><img src="tpl/img/icons/telegram.svg" alt="Телеграм"></p>
+						<p>По всем вопросам пишите или звоните:<span>+7 (917) 327-77-64, Екатерина<img src="tpl/img/icons/viber.svg" alt="Вайбер"><img src="tpl/img/icons/whatsapp.svg" alt="Вотсап"><img src="tpl/img/icons/telegram.svg" alt="Телеграм"></span></p>
 						<p> Наши социальные сети:<a href="https://vk.com/igrovoi_centre"> <img src="tpl/img/icons/vkontakte.svg" alt="Вконтакте"></a><a href="https://www.instagram.com/veselyerebyata/"> <img src="tpl/img/icons/instagram.svg" alt="Инстаграм"></a></p>
 					</div>
 					<div class="contacts__map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1242.0331045975115!2d46.11390064439382!3d51.4936524818437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4114b83414c5e501%3A0x68f954b377b916ff!2z0YPQuy4g0KLQtdC70YzQvNCw0L3QsCwgNtC0LCDQrdC90LPQtdC70YzRgSwg0KHQsNGA0LDRgtC-0LLRgdC60LDRjyDQvtCx0LsuLCA0MTMxMDA!5e0!3m2!1sru!2sru!4v1639305946901!5m2!1sru!2sru" width="100%" height="450" style="border:4px solid #F9ED69;" allowfullscreen="" loading="lazy"></iframe></div>
@@ -462,9 +467,6 @@
 				<div class="footer__block">
 					<div class="footer-block__text">© ИП Пономарёва Е.Е., veselyerebyata.ru, 2022</div>
 					<div class="footer-block__text">Все права защищены</div>
-				</div>
-				<div class="footer__block">
-					<div class="footer-block__text">Дизайн и вёрстка сайта<a href="https://github.com/webdev-yaroslav">Пономарёв Ярослав</a></div>
 				</div><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
 				</svg>
 			</div>
