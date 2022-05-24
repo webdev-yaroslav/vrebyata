@@ -6,8 +6,8 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
-$email = $_POST['phone'];
-$text = $_POST['time'];
+$phone = $_POST['phone'];
+$time = $_POST['time'];
 // $file = $_FILES['myfile'];
 
 // Формирование самого письма
@@ -61,3 +61,29 @@ try {
 
 // Отображение результата
 echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+
+/* Попытка подключения к серверу MySQL. Предполагая, что вы используете MySQL
+ сервер с настройкой по умолчанию (пользователь root без пароля) */
+$link = mysqli_connect("localhost", "root", "root", "calls");
+ 
+// Проверьте подключение
+if($link === false){
+    die("ERROR: Нет подключения. " . mysqli_connect_error());
+}
+ 
+//  экранирует специальные символы в строке
+$name = mysqli_real_escape_string($link, $_REQUEST['name']);
+$phone = mysqli_real_escape_string($link, $_REQUEST['phone']);
+$time = mysqli_real_escape_string($link, $_REQUEST['time']);
+ 
+// Попытка выполнения запроса вставки
+$sql = "REPLACE INTO persons (name, phone, time) VALUES ('$name', $phone, '$time')";
+if(mysqli_query($link, $sql)){
+    echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+} else{
+    echo "ERROR: Не удалось выполнить $sql. " . mysqli_error($link);
+}
+
+// Закрыть соединение
+mysqli_close($link);
+?>
