@@ -5,15 +5,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--meta tags-->
-		<meta name="description" content="">
-		<meta property="og:image" content="tpl/img/og-image.jpg">
+		<meta name="keywords" content="День рождения, Детские праздники Энгельс, Весёлые ребята">
+		<meta name="description" content="Игровой центр Весёлые ребята приглашает Вас отметить самый незабываемый день рождение! Это будет самый яркий и весёлый праздник!">
+		<meta property="og:image" content="tpl/img/logo2.png">
 		<meta property="og:image:type" content="image/jpg">
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:height" content="630">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="">
-		<meta property="og:title" content="" />
-		<meta property="og:description" content="" /><!-- favicons-->
+		<meta property="og:url" content="https://veselyerebyata.ru/">
+		<meta property="og:local" content="ru_RU">
+		<meta property="og:site_name" content="Детские праздники в г. Энгельс">
+		<meta property="og:title" content="Детские праздники в г. Энгельс">
+		<meta property="og:description" content="Игровой центр Весёлые ребята приглашает Вас отметить самый незабываемый день рождение! Это будет самый яркий и весёлый праздник!">
+		<meta name="yandex-verification" content="9b6b5ed5e80e2150">
+		<meta name="google-site-verification" content="XoAiPm4JS4iCoAmbQpYXtNvdYy0OpVvwV-Wv9jUUrDQ"><!-- favicons-->
 		<link rel="icon" href="tpl/img/favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<!--title-->
@@ -36,6 +41,7 @@
 							<li><a href="#character">Персонажи</a></li>
 							<li><a href="#package">Пакеты услуг</a></li>
 							<li><a href="#contact">Контакты</a></li>
+							<li><a href="#review">Отзывы</a></li>
 						</ul>
 					</nav><button onclick="document.getElementById('modal01').style.display='block'" title="Open Modal">Заказать звонок</button>
 					<div class="hamburger-menu"> <input id="menu__toggle" type="checkbox"><label class="menu__btn" for="menu__toggle"> <span> </span></label>
@@ -44,6 +50,7 @@
 							<li><a class="menu__item" href="#character">Персонажи</a></li>
 							<li><a class="menu__item" href="#package">Пакеты услуг</a></li>
 							<li><a class="menu__item" href="#contact">Контакты</a></li>
+							<li><a class="menu__item" href="#review">Отзывы</a></li>
 						</ul>
 					</div>
 				</div>
@@ -55,15 +62,15 @@
 					<div class="close" onclick="document.getElementById('modal01').style.display='none'" title="Close Modal"><img src="tpl/img/icons/modalkrest.svg" alt=""></div>
 					<h1>Закажите звонок!</h1>
 					<form class="form__body" id="form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')">
-						<div class="form__item"> <label class="form__label" for="formName">Ваше имя</label><input class="form__input _req _error" id="formName" type="text" name="name" placeholder="Введите свое имя"></div>
-						<div class="form__item"> <label class="form__label" for="formPhone">Номер Вашего телефона</label><input class="form__input _req _error" id="formPhone" type="text" name="phone" placeholder="Введите свой номер"></div>
+						<div class="form__item"> <label class="form__label" for="formName">Ваше имя</label><input class="form__input" id="formName" type="text" name="name" placeholder="Введите свое имя"></div>
+						<div class="form__item"> <label class="form__label" for="formPhone">Номер Вашего телефона</label><input class="form__input" id="formPhone" type="text" name="phone" placeholder="Введите свой номер"></div>
 						<div class="form__item"> <label class="form__label" for="formTime">Когда Вам удобно принять звонок?</label><input class="form__input" id="formTime" type="text" name="time"></div><button class="form__button" onclick="document.getElementById('modal01').style.display='none'" title="Close Modal" type="submit">Жду звонка!</button>
 					</form>
 				</div>
 			</div>
 			<section class="hero">
 				<div class="container">
-					<h1>Организация дестких праздников "Весёлые ребята" поможет отметить вам самый незабываемый день рождения!</h1>
+					<h1>Организация детских праздников "Весёлые ребята" поможет отметить вам самый незабываемый день рождения!</h1>
 				</div>
 			</section>
 			<div class="about-wave"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
@@ -85,7 +92,7 @@
 							</ol>
 						</div>
 					</div>
-					<div class="swiper aboutSwiper">
+					<div class="swiper about-swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide"> <img src="tpl/img/swiper-about/picimg1.png" alt="Картинка"></div>
 							<div class="swiper-slide"> <img src="tpl/img/swiper-about/picimg2.png" alt="Картинка"></div>
@@ -545,7 +552,6 @@
 										<div class="li__title">Также в программе</div>
 										<div class="li__subtitle">Мастер класс по ШДМ</div>
 										<div class="li__subtitle">Генератор мыльных пузырей</div>
-										<div class="li__subtitle">Фотографии</div>
 										<div class="li__subtitle">Вынос торта</div>
 										<div class="li__subtitle">Чаепитие, два стола для детей и отдельный для родителей</div>
 									</div>
@@ -576,6 +582,43 @@
 			<div class="wave"><svg class='wave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
 					<path fill="#fc95b4" fill-opacity="1" d="M0,160L34.3,154.7C68.6,149,137,139,206,117.3C274.3,96,343,64,411,74.7C480,85,549,139,617,138.7C685.7,139,754,85,823,58.7C891.4,32,960,32,1029,64C1097.1,96,1166,160,1234,181.3C1302.9,203,1371,181,1406,170.7L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
 				</svg></div>
+			<section class="reviews" id="review">
+				<div class="container">
+					<h2>Отзывы</h2>
+					<div class="swiper review-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"> <img src="tpl/img/avatar-1.jpeg" alt="vatar">
+								<div class="review-name">Ярослав</div>
+								<div class="review-text">Очень понравилось! Чисто аккуратно, аниматоры постоянно были с детьми, все 2часа! Все предусмотрено и посуда и многое другое... Даже свечку нашли и шары готовят! И шоу и подарочки подарили всем!</div>
+							</div>
+							<div class="swiper-slide"> <img src="tpl/img/avavtar-2.webp" alt="vatar">
+								<div class="review-name">Ксения</div>
+								<div class="review-text">Прекрасное место для празднования дней рождения детей. Мы здесь бываем часто, есть и кинотеатр 3D, и икс бокс, и аниматору и игры разные.</div>
+							</div>
+							<div class="swiper-slide"> <img src="tpl/img/avavtar-2.webp" alt="vatar">
+								<div class="review-name">Валентина</div>
+								<div class="review-text">Отмечаем здесь внукам дни рождения. Очень нравится. Спасибо!</div>
+							</div>
+							<div class="swiper-slide"> <img src="tpl/img/avatar-1.jpeg" alt="vatar">
+								<div class="review-name">Илья</div>
+								<div class="review-text">Отмечали день рождения дочери. Отличное место. Особая благодарность аниматорам! Очень внимательные, не оставляют детей без внимания! Много развлечений для детей и, если родители готовы, и они могут присоединиться! Такое место не стыдно советовать. Повторюсь, отличное место для праздника.</div>
+							</div>
+							<div class="swiper-slide"> <img src="tpl/img/avavtar-2.webp" alt="vatar">
+								<div class="review-name">Татьяна</div>
+								<div class="review-text">Отличное место!!! Девчонкам и мальчишкам понравилось! Рекомендую праздновать в игровом центре "Весёлые ребята" дни рождения и другие детские праздники!</div>
+							</div>
+						</div>
+					</div>
+					<form class="decor">
+						<div class="form-left-decoration"></div>
+						<div class="form-right-decoration"></div>
+						<div class="circle"></div>
+						<div class="form-inner">
+							<h3>Оставить отзыв</h3><input type="text" name="reviewname" placeholder="Ваше имя"><textarea placeholder="Сообщение..." name="message" rows="3"></textarea><input type="submit" value="Отправить">
+						</div>
+					</form>
+				</div>
+			</section>
 		</div>
 		<footer>
 			<div class="container">

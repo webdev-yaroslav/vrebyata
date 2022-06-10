@@ -18,10 +18,9 @@ $(document).ready(function(){
 
 })
 
-var swiper = new Swiper(".aboutSwiper", {
+var swiper = new Swiper(".about-swiper", {
     slidesPerView: 3,
     spaceBetween: 30,
-    loop: true,
     grabCursor: true,
     autoplay: {
         delay: 2000,
@@ -34,6 +33,16 @@ var swiper = new Swiper(".aboutSwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+});
+
+var swiper2 = new Swiper(".review-swiper", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    grabCursor: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
     },
 });
 
